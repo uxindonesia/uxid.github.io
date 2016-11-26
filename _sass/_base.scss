@@ -1,13 +1,27 @@
 $content-width: 800px;
-$main: #19CCAA;
+
+$main: #E2136A;
+$main-dark: #C21D72;
+$main-darker: #94226D;
+$white: #FFF;
+$light: #E7E8E9;
+$grey: #9A9BA0;
+$dark: #2E2F30;
+$black: #1E1F20;
+
 $font-style: 'Open Sans', sans-serif;
-$font-color: #262626;
-$link-color: #425469;
-$link-hover-color: $main;
-$heading-font: 'Muli', sans-serif;
-$heading-font-color: #425469;
-$light: #E7EDF4;
-$header:  #1D1425;
+$code-font: 'Inconslata', monospace;
+$heading-font: $font-style;
+
+$font-color: $dark;
+$heading-font-color: $dark;
+
+$font-size: 2em;
+$line-height: 1.4;
+
+$link-color: $main;
+$link-hover-color: $main-dark;
+$link-visited-color: $main-darker;
 
 *,
 *::before,
@@ -15,4 +29,21 @@ $header:  #1D1425;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-} 
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color: $font-color;
+	font-family: $font-style;
+	font-size: 62.5%;
+	line-height: $line-height;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-size: $font-size;
+	max-width: 100%;
+	background-color: $white;
+}

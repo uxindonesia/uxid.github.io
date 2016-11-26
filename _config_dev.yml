@@ -1,12 +1,11 @@
-# Site Settings
-title: Start Jekyll
-email: taniarascia@gmail.com
+title: UXIndonesia (UXID)
+email: hello@uxindonesia.org
 description: >
-  A guide to getting started with Jekyll.
+  An open community of user experience designers in Indonesia.
 baseurl: ""
 url: "http://localhost:4000"
-twitter_username: taniarascia
-github_username:  taniarascia
+twitter_username: uxindonesia
+github_username:  uxindonesia
 # Build Settings
 sass:
   sass_dir: _sass
