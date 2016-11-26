@@ -56,6 +56,11 @@ header {
 
 		.logo {
 			display: inline-block;
+
+			#logo {
+				width: 80pt;
+			}
+
 			a {
 				text-decoration: none;
 				color: $font-color;
@@ -98,16 +103,42 @@ header {
 }
 
 /*---------------------------------------
+Carousel & Banner
+---------------------------------------*/
+
+.carousel {
+	background: $light;
+	height: 360px;
+	width: 100%
+}
+
+.banner {
+	width: 1000px;
+	margin: 0 auto;
+	font-size: .8em;
+
+	.banner-inner {
+		background-color: $light;
+		height: 100px;
+		width: 600px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+/*---------------------------------------
 Main
 ---------------------------------------*/
 
 main {
-	padding: 1em 30pt;
 	max-width: 1000px;
 	margin: 0 auto;
 	border-bottom: 1pt solid #ddd;
 
 	article {
+		padding: 0 30pt;
 		max-width: $content-width;
 		padding-bottom: 4em;
 	}
@@ -121,25 +152,6 @@ main {
 img {
 	max-width: 100%;
 	margin: 0 auto;
-}
-
-.container {
-	max-width: $content-width;
-	margin: 0 auto;
-}
-
-/* Specialy Behaved Objects */
-
-#logo {
-	width: 80pt;
-}
-
-.promo-banner {
-	padding: 10px;
-
-	img {
-		width: 100%;
-	}
 }
 
 /* Responsive */

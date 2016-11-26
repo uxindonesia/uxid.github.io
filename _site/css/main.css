@@ -65,6 +65,8 @@ header {
     margin: auto; }
     header .header-inner .logo {
       display: inline-block; }
+      header .header-inner .logo #logo {
+        width: 80pt; }
       header .header-inner .logo a {
         text-decoration: none;
         color: #2E2F30; }
@@ -91,14 +93,33 @@ header {
               color: #E2136A; }
 
 /*---------------------------------------
+Carousel & Banner
+---------------------------------------*/
+.carousel {
+  background: #E7E8E9;
+  height: 360px;
+  width: 100%; }
+
+.banner {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: .8em; }
+  .banner .banner-inner {
+    background-color: #E7E8E9;
+    height: 100px;
+    width: 600px; }
+  .banner img {
+    width: 100%; }
+
+/*---------------------------------------
 Main
 ---------------------------------------*/
 main {
-  padding: 1em 30pt;
   max-width: 1000px;
   margin: 0 auto;
   border-bottom: 1pt solid #ddd; }
   main article {
+    padding: 0 30pt;
     max-width: 800px;
     padding-bottom: 4em; }
   main header {
@@ -108,19 +129,6 @@ main {
 img {
   max-width: 100%;
   margin: 0 auto; }
-
-.container {
-  max-width: 800px;
-  margin: 0 auto; }
-
-/* Specialy Behaved Objects */
-#logo {
-  width: 80pt; }
-
-.promo-banner {
-  padding: 10px; }
-  .promo-banner img {
-    width: 100%; }
 
 /* Responsive */
 @media screen and (max-width: 680px) {
@@ -150,7 +158,8 @@ Headings
 ---------------------------------------*/
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 600;
   color: #2E2F30;
   font-family: "Open Sans", sans-serif;
@@ -161,12 +170,15 @@ h3 {
   h2 a,
   h2 a:visited,
   h3 a,
-  h3 a:visited {
+  h3 a:visited,
+  h4 a,
+  h4 a:visited {
     text-decoration: none;
     color: #2E2F30; }
   h1 a:hover,
   h2 a:hover,
-  h3 a:hover {
+  h3 a:hover,
+  h4 a:hover {
     text-decoration: underline; }
 
 h1 {
@@ -178,6 +190,9 @@ h2 {
 
 h3 {
   font-size: 1.2em; }
+
+h4 {
+  font-size: 1em; }
 
 /*---------------------------------------
 Block Body Texts
@@ -210,7 +225,7 @@ dd {
   margin: .7em 0; }
 
 /*---------------------------------------
-Taxt level markups
+Text level markups
 ---------------------------------------*/
 code,
 kbd,

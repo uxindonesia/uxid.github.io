@@ -5,11 +5,30 @@
 <body>
 	{% include header.html %}
 	<main>
+		{% if page.carousel %}
+			{% include carousel.html %}
+		{% endif page.carousel %}
 		<article>
 			{{ content }}
 		</article>
 	</main>
-	{% include bannerBtm.html %}
+	{% for post in site.categories.banner %}
+		{% assign curDate = site.time | date: '%Y-%m-%d' %}
+		{% assign postStartDate = post.start | date: '%Y-%m-%d' %}
+		{% assign postEndDate = post.end | date: '%Y-%m-%d' %}
+
+		{% if postStartDate <= curDate %}
+			{% if postEndDate >= curDate %}
+				<div class="banner">
+					<h4>UXID is a proud community partner of:</h4>
+					<div class="banner-inner">
+						{{ post.content }}
+					</div>
+				</div>
+			{% endif postEndDate %}
+		{% endif postStartDate %}
+	{% endfor %}
+
 	{% include footer.html %}
 </body>
 
